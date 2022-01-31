@@ -15,7 +15,7 @@ class _VerifiedPageState extends State<VerifiedPage> {
     return Scaffold(
       body: Container(
         child: Padding(
-          padding: const EdgeInsets.only(bottom: 220),
+          padding: const EdgeInsets.fromLTRB(0, 100, 0, 100),
           child: Card(
             elevation: 10,
             child: Padding(
@@ -60,7 +60,7 @@ class _VerifiedPageState extends State<VerifiedPage> {
                       children: [
                         Text('4 digit code sent to'),
                         Text(
-                          ' +91-999999****',
+                          ' +91-**********',
                           style: TextStyle(
                             color: Constant.primaryColor,
                           ),
@@ -90,6 +90,7 @@ class _VerifiedPageState extends State<VerifiedPage> {
                                   )),
                               child: Center(
                                 child: TextFormField(
+                                  keyboardType: TextInputType.number,
                                   decoration: InputDecoration(
                                       contentPadding:
                                           EdgeInsets.only(left: 16, bottom: 12),
@@ -114,6 +115,7 @@ class _VerifiedPageState extends State<VerifiedPage> {
                                     width: 1.5,
                                   )),
                               child: TextFormField(
+                                keyboardType: TextInputType.number,
                                 decoration: InputDecoration(
                                     contentPadding:
                                         EdgeInsets.only(left: 16, bottom: 12),
@@ -137,6 +139,7 @@ class _VerifiedPageState extends State<VerifiedPage> {
                                     width: 1.5,
                                   )),
                               child: TextFormField(
+                                keyboardType: TextInputType.number,
                                 decoration: InputDecoration(
                                     contentPadding:
                                         EdgeInsets.only(left: 16, bottom: 12),
@@ -160,6 +163,7 @@ class _VerifiedPageState extends State<VerifiedPage> {
                                     width: 1.5,
                                   )),
                               child: TextFormField(
+                                keyboardType: TextInputType.number,
                                 decoration: InputDecoration(
                                     contentPadding:
                                         EdgeInsets.only(left: 16, bottom: 12),

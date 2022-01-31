@@ -39,7 +39,7 @@ class _DashboardPageState extends State<DashboardPage> {
         return Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            title: Text('EDUCATION APP'),
+            title: Text('Educational App'),
             leading: Icon(Icons.format_align_left_outlined),
           ),
           body: SingleChildScrollView(
@@ -103,7 +103,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           height: 12,
                         ),
                         Container(
-                          height: 210,
+                          height: 220,
                           width: MediaQuery.of(context).size.width,
                           child: ListView.builder(
                             itemCount:
@@ -205,9 +205,9 @@ class _DashboardPageState extends State<DashboardPage> {
                                               color: Constant.primaryColor,
                                               size: 8,
                                             ),
-                                            SizedBox(
-                                              width: 4,
-                                            ),
+                                            // SizedBox(
+                                            //   width: 4,
+                                            // ),
                                             Text(
                                               'Master Class',
                                               style: TextStyle(
@@ -388,7 +388,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           height: 12,
                         ),
                         Container(
-                          height: 210,
+                          height: 220,
                           width: MediaQuery.of(context).size.width,
                           child: neetAllSubjectListWidget(),
                         ),
@@ -424,7 +424,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           height: 12,
                         ),
                         Container(
-                          height: 210,
+                          height: 220,
                           width: MediaQuery.of(context).size.width,
                           child: ListView.builder(
                             itemCount:
@@ -557,7 +557,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             getViewAllWidget(),
                           ]),
                       Container(
-                        height: 210,
+                        height: 220,
                         width: MediaQuery.of(context).size.width,
                         child: getNeetCompletedListWidget(),
                       ),

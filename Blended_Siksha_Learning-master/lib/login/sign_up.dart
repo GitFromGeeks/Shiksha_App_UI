@@ -20,7 +20,7 @@ class _SignUpPageState extends State<SignUpPage> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(0, 18, 0, 250),
+            padding: const EdgeInsets.fromLTRB(0, 130, 0, 250),
             child: Card(
               elevation: 8,
               child: Padding(
@@ -43,7 +43,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ],
                     ),
                     SizedBox(
-                      height: 80,
+                      height: 60,
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 1.15,
@@ -86,8 +86,10 @@ class _SignUpPageState extends State<SignUpPage> {
                                 )),
                             child: TextFormField(
                               controller: nameController,
-                              decoration: InputDecoration(contentPadding:EdgeInsets.only(left: 12),
-                                  border: InputBorder.none, hintText: 'Name'),
+                              decoration: InputDecoration(
+                                  contentPadding: EdgeInsets.only(left: 12),
+                                  border: InputBorder.none,
+                                  hintText: 'Name'),
                             )),
                       ),
                     ),
@@ -109,8 +111,10 @@ class _SignUpPageState extends State<SignUpPage> {
                                 )),
                             child: TextFormField(
                               controller: gmailController,
-                              decoration: InputDecoration(contentPadding:EdgeInsets.only(left: 12),
-                                  border: InputBorder.none, hintText: 'Gmail'),
+                              decoration: InputDecoration(
+                                  contentPadding: EdgeInsets.only(left: 12),
+                                  border: InputBorder.none,
+                                  hintText: 'Gmail'),
                             )),
                       ),
                     ),
@@ -132,13 +136,17 @@ class _SignUpPageState extends State<SignUpPage> {
                                 )),
                             child: TextFormField(
                               controller: passwordController,
-                              decoration: InputDecoration(contentPadding:EdgeInsets.only(left: 12),
+                              decoration: InputDecoration(
+                                  contentPadding: EdgeInsets.only(left: 12),
                                   border: InputBorder.none,
                                   hintText: 'Password'),
                             )),
                       ),
                     ),
                     Expanded(child: Container()),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [

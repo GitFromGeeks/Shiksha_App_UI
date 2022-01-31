@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:Blended_Siksha_learning/constants.dart';
 import 'package:Blended_Siksha_learning/shared/routes.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key key}) : super(key: key);
@@ -34,8 +35,8 @@ class _WelcomePageState extends State<WelcomePage> {
                       height: 200,
                       width: 200,
                       decoration: BoxDecoration(
-                          image: DecorationImage(image: Images.app_logo,
-                              fit: BoxFit.fill),
+                          image: DecorationImage(
+                              image: Images.app_logo, fit: BoxFit.fill),
                           shape: BoxShape.circle),
                     )
                   ],
@@ -75,7 +76,8 @@ class _WelcomePageState extends State<WelcomePage> {
                                     color: Constant.primaryColor,
                                     width: 1.5,
                                   )),
-                              child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   DropdownMenuItem(
                                     child: Text(' +91'),
@@ -100,7 +102,10 @@ class _WelcomePageState extends State<WelcomePage> {
                                   )),
                               child: TextFormField(
                                 controller: mobileController,
-                                decoration: InputDecoration(contentPadding:EdgeInsets.only(left: 16,bottom: 4),
+                                keyboardType: TextInputType.number,
+                                decoration: InputDecoration(
+                                    contentPadding:
+                                        EdgeInsets.only(left: 16, bottom: 4),
                                     border: InputBorder.none,
                                     hintText: ' Enter your phone number'),
                               )),
@@ -119,7 +124,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       width: MediaQuery.of(context).size.width / 1.2,
                       child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, Routes.SIGNUP_PAGE);
+                            Navigator.pushNamed(context, Routes.NEETUG_PAGE);
                           },
                           child: Text(
                             'Sign in',
@@ -137,8 +142,9 @@ class _WelcomePageState extends State<WelcomePage> {
                     Column(
                       children: [
                         Text(
-                          "Don't have a account?",
-                          style: TextStyle(fontSize: 16, color: Colors.black),
+                          "Don't have an account?",
+                          // style: TextStyle(fontSize: 16, color: Colors.black),
+                          style: GoogleFonts.alice(),
                         )
                       ],
                     ),
@@ -149,7 +155,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       children: [
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, Routes.NEETUG_PAGE);
+                            Navigator.pushNamed(context, Routes.SIGNUP_PAGE);
                           },
                           child: Text(
                             'Sign up',

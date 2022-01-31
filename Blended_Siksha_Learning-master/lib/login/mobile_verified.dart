@@ -16,12 +16,9 @@ class _MobileVerifiedPageState extends State<MobileVerifiedPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: MediaQuery
-            .of(context)
-            .size
-            .height,
+        height: MediaQuery.of(context).size.height,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 0, 0, 220),
+          padding: const EdgeInsets.fromLTRB(0, 100, 0, 100),
           child: Card(
             elevation: 10,
             child: Padding(
@@ -37,7 +34,9 @@ class _MobileVerifiedPageState extends State<MobileVerifiedPage> {
                       Text(
                         'Phone Number',
                         style: TextStyle(
-                          fontSize: 16, color: Constant.primaryColor,),
+                          fontSize: 16,
+                          color: Constant.primaryColor,
+                        ),
                       )
                     ],
                   ),
@@ -45,10 +44,7 @@ class _MobileVerifiedPageState extends State<MobileVerifiedPage> {
                     height: 40,
                   ),
                   SizedBox(
-                    width: MediaQuery
-                        .of(context)
-                        .size
-                        .width / 1.25,
+                    width: MediaQuery.of(context).size.width / 1.25,
                     child: Row(
                       children: [Text('Enter mobile number to continue')],
                     ),
@@ -57,17 +53,11 @@ class _MobileVerifiedPageState extends State<MobileVerifiedPage> {
                     height: 16,
                   ),
                   SizedBox(
-                    width: MediaQuery
-                        .of(context)
-                        .size
-                        .width / 1.22,
+                    width: MediaQuery.of(context).size.width / 1.22,
                     child: Row(
                       children: [
                         SizedBox(
-                          width: MediaQuery
-                              .of(context)
-                              .size
-                              .width / 6.5,
+                          width: MediaQuery.of(context).size.width / 6.5,
                           child: Material(
                             elevation: 5,
                             child: Container(
@@ -76,9 +66,11 @@ class _MobileVerifiedPageState extends State<MobileVerifiedPage> {
                                     borderRadius: BorderRadius.circular(5),
                                     shape: BoxShape.rectangle,
                                     border: Border.all(
-                                      color: Constant.primaryColor, width: 1.5,
+                                      color: Constant.primaryColor,
+                                      width: 1.5,
                                     )),
-                                child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     DropdownMenuItem(
                                       child: Text(' +91'),
@@ -89,10 +81,7 @@ class _MobileVerifiedPageState extends State<MobileVerifiedPage> {
                           ),
                         ),
                         SizedBox(
-                          width: MediaQuery
-                              .of(context)
-                              .size
-                              .width / 1.55,
+                          width: MediaQuery.of(context).size.width / 1.55,
                           child: Material(
                             elevation: 5,
                             child: Container(
@@ -101,11 +90,15 @@ class _MobileVerifiedPageState extends State<MobileVerifiedPage> {
                                     borderRadius: BorderRadius.circular(5),
                                     shape: BoxShape.rectangle,
                                     border: Border.all(
-                                      color: Constant.primaryColor, width: 1.5,
+                                      color: Constant.primaryColor,
+                                      width: 1.5,
                                     )),
                                 child: TextFormField(
                                   controller: mobileController,
-                                  decoration: InputDecoration(contentPadding:EdgeInsets.only(left: 12,bottom: 4),
+                                  keyboardType: TextInputType.number,
+                                  decoration: InputDecoration(
+                                      contentPadding:
+                                          EdgeInsets.only(left: 12, bottom: 4),
                                       border: InputBorder.none,
                                       hintText: ' Enter Number'),
                                 )),
