@@ -1,4 +1,3 @@
-
 import 'package:Blended_Siksha_learning/courses/main_page/dashboard_page.dart';
 import 'package:Blended_Siksha_learning/courses/online_courses/widget/neet_online_test_widget.dart';
 import 'package:Blended_Siksha_learning/courses/online_courses/widget/neet_uploaded_courses_widget.dart';
@@ -13,6 +12,7 @@ import 'package:Blended_Siksha_learning/login/sign_up.dart';
 import 'package:Blended_Siksha_learning/login/verified_page.dart';
 import 'package:Blended_Siksha_learning/login/welcome_page.dart';
 import 'package:Blended_Siksha_learning/shared/popular_courses.dart';
+import 'package:Blended_Siksha_learning/login/profile_page.dart';
 
 class Routes {
   static const String FRONT_PAGE = '/frontpage';
@@ -29,6 +29,7 @@ class Routes {
   static const String NEET_PHYSICS_ONLINE = '/neetphysicsonline';
   static const String QUESTION_BANK = '/questionbank';
   static const String NEET_ONLINE_TEST = '/neetonlinetest';
+  static const String PROFILE_PAGE = '/profilepage';
 }
 
 final routes = {
@@ -46,4 +47,5 @@ final routes = {
   Routes.NEET_PHYSICS_ONLINE: (context) => NeetPhysicsOnline(),
   Routes.QUESTION_BANK: (context) => QuestionBank(),
   Routes.NEET_ONLINE_TEST: (context) => NeetOnlineTest(),
+  Routes.PROFILE_PAGE: (context) => profile_page()
 };

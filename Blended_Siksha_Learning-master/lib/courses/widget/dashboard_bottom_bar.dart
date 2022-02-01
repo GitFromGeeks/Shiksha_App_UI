@@ -90,10 +90,16 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
-                  Icons.perm_contact_cal_outlined,
-                  size: 40,
-                  color: Constant.secondaryColor,
+                InkWell(
+                  onTap: () {
+                    //
+                    Navigator.pushNamed(context, Routes.PROFILE_PAGE);
+                  },
+                  child: Icon(
+                    Icons.perm_contact_cal_outlined,
+                    size: 40,
+                    color: Constant.secondaryColor,
+                  ),
                 ),
                 Text(
                   'Profile',
