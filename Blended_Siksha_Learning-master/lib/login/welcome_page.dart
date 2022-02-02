@@ -155,7 +155,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       children: [
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, Routes.SIGNUP_PAGE);
+                            Navigator.pushNamed(context, Routes.SIGNUP);
                           },
                           child: Text(
                             'Sign up',

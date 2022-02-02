@@ -13,6 +13,9 @@ import 'package:Blended_Siksha_learning/login/verified_page.dart';
 import 'package:Blended_Siksha_learning/login/welcome_page.dart';
 import 'package:Blended_Siksha_learning/shared/popular_courses.dart';
 import 'package:Blended_Siksha_learning/login/profile_page.dart';
+import 'package:Blended_Siksha_learning/login/signup.dart';
+import 'package:Blended_Siksha_learning/login/student_registration.dart';
+import 'package:Blended_Siksha_learning/login/teacher_registration.dart';
 
 class Routes {
   static const String FRONT_PAGE = '/frontpage';
@@ -30,6 +33,9 @@ class Routes {
   static const String QUESTION_BANK = '/questionbank';
   static const String NEET_ONLINE_TEST = '/neetonlinetest';
   static const String PROFILE_PAGE = '/profilepage';
+  static const String SIGNUP = '/signup';
+  static const String STUDENT_REG = '/studentReg';
+  static const String TEACHER_REG = '/teacherReg';
 }
 
 final routes = {
@@ -47,5 +53,8 @@ final routes = {
   Routes.NEET_PHYSICS_ONLINE: (context) => NeetPhysicsOnline(),
   Routes.QUESTION_BANK: (context) => QuestionBank(),
   Routes.NEET_ONLINE_TEST: (context) => NeetOnlineTest(),
-  Routes.PROFILE_PAGE: (context) => profile_page()
+  Routes.PROFILE_PAGE: (context) => profile_page(),
+  Routes.SIGNUP: (context) => signup(),
+  Routes.STUDENT_REG: (context) => student_registration(),
+  Routes.TEACHER_REG: (context) => teacher_registration(),
 };
