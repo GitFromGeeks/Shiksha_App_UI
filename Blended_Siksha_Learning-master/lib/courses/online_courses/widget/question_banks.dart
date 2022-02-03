@@ -21,89 +21,293 @@ class question_banks extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.15,
+                height: MediaQuery.of(context).size.height * 0.08,
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Upcomming Live Class",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.02,
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Ongoing Live Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.02,
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Completed Live Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.02,
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Free Video Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.02,
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Subscibtion Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.09,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Constant.primaryColor),
+                      borderRadius: BorderRadius.circular(15)),
+                  shadowColor: Constant.primaryColor,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child:
+                            Text("Online Test 1 Question Bank (10 Questions)"),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Icon(
+                          Icons.arrow_downward_outlined,
+                          color: Constant.primaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
             ],
           ),

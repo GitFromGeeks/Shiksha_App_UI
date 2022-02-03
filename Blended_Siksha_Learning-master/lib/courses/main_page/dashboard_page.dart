@@ -6,8 +6,10 @@ import 'package:Blended_Siksha_learning/courses/widget/neet_all_subject_widget.d
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_completed_widget.dart';
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_first_widget.dart';
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_question_bank_widget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:Blended_Siksha_learning/shared/routes.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({Key key}) : super(key: key);
@@ -599,7 +601,13 @@ class _DashboardPageState extends State<DashboardPage> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20),
                             ),
-                            getViewAllWidget()
+                            // getViewAllWidget()
+                            CupertinoButton(
+                                child: Text("VIEW ALL"),
+                                onPressed: () {
+                                  Navigator.pushNamed(
+                                      context, Routes.QUES_BANKS);
+                                })
                           ],
                         ),
                       ),
