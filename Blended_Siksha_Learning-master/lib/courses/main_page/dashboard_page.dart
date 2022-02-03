@@ -6,9 +6,7 @@ import 'package:Blended_Siksha_learning/courses/widget/neet_all_subject_widget.d
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_completed_widget.dart';
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_first_widget.dart';
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_question_bank_widget.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -38,6 +36,7 @@ class _DashboardPageState extends State<DashboardPage> {
           builder: (context, child, model) {
         return Scaffold(
           appBar: AppBar(
+            backgroundColor: Constant.primaryColor,
             centerTitle: true,
             title: Text('Educational App'),
             leading: Icon(Icons.format_align_left_outlined),

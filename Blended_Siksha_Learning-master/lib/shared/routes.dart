@@ -4,7 +4,7 @@ import 'package:Blended_Siksha_learning/courses/online_courses/widget/neet_uploa
 import 'package:Blended_Siksha_learning/courses/uploaded_courses_widget/neet_jee_math_widget.dart';
 import 'package:Blended_Siksha_learning/courses/uploaded_courses_widget/neet_physics_online_widget.dart';
 import 'package:Blended_Siksha_learning/courses/widget/neet_upcoming_lectures_widget.dart';
-import 'package:Blended_Siksha_learning/courses/widget/question_bank_widget.dart';
+// import 'package:Blended_Siksha_learning/courses/widget/question_bank_widget.dart';
 import 'package:Blended_Siksha_learning/login/congratulation_page.dart';
 import 'package:Blended_Siksha_learning/login/front_page.dart';
 import 'package:Blended_Siksha_learning/login/mobile_verified.dart';
@@ -16,6 +16,8 @@ import 'package:Blended_Siksha_learning/login/profile_page.dart';
 import 'package:Blended_Siksha_learning/login/signup.dart';
 import 'package:Blended_Siksha_learning/login/student_registration.dart';
 import 'package:Blended_Siksha_learning/login/teacher_registration.dart';
+import 'package:Blended_Siksha_learning/courses/video/live_class.dart';
+import 'package:Blended_Siksha_learning/courses/online_courses/widget/question_banks.dart';
 
 class Routes {
   static const String FRONT_PAGE = '/frontpage';
@@ -30,12 +32,14 @@ class Routes {
   static const String JEEMATH_COURSES = '/jeemathcourses';
   static const String UPLOADED_COURSES = '/uploadedcourses';
   static const String NEET_PHYSICS_ONLINE = '/neetphysicsonline';
-  static const String QUESTION_BANK = '/questionbank';
+  // static const String QUESTION_BANK = '/questionbank';
   static const String NEET_ONLINE_TEST = '/neetonlinetest';
   static const String PROFILE_PAGE = '/profilepage';
   static const String SIGNUP = '/signup';
   static const String STUDENT_REG = '/studentReg';
   static const String TEACHER_REG = '/teacherReg';
+  static const String LIVE_CLASS = '/liveClass';
+  static const String QUES_BANKS = '/questionBanks';
 }
 
 final routes = {
@@ -51,10 +55,12 @@ final routes = {
   Routes.JEEMATH_COURSES: (context) => NeetJeeMathCourses(),
   Routes.UPLOADED_COURSES: (context) => NeetUploadedCourses(),
   Routes.NEET_PHYSICS_ONLINE: (context) => NeetPhysicsOnline(),
-  Routes.QUESTION_BANK: (context) => QuestionBank(),
+  // Routes.QUESTION_BANK: (context) => QuestionBank(),
   Routes.NEET_ONLINE_TEST: (context) => NeetOnlineTest(),
   Routes.PROFILE_PAGE: (context) => profile_page(),
   Routes.SIGNUP: (context) => signup(),
   Routes.STUDENT_REG: (context) => student_registration(),
   Routes.TEACHER_REG: (context) => teacher_registration(),
+  Routes.LIVE_CLASS: (context) => live_class(),
+  Routes.QUES_BANKS: (context) => question_banks()
 };

@@ -14,7 +14,7 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
   Widget build(BuildContext context) {
     return Container(
         height: 80,
-        color: Colors.white,
+        color: Constant.primaryColor,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -22,11 +22,13 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, Routes.NEETUG_PAGE);
+                  },
                   child: Icon(
                     Icons.home,
                     size: 40,
-                    color: Constant.secondaryColor,
+                    color: Colors.purple[900],
                   ),
                 ),
                 Text(
@@ -38,10 +40,16 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
-                  Icons.video_call_sharp,
-                  size: 40,
-                  color: Constant.secondaryColor,
+                InkWell(
+                  onTap: () {
+                    //
+                    Navigator.pushNamed(context, Routes.LIVE_CLASS);
+                  },
+                  child: Icon(
+                    Icons.video_call_sharp,
+                    size: 40,
+                    color: Colors.purple[900],
+                  ),
                 ),
                 Text(
                   'Live Class',
@@ -59,7 +67,7 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
                   child: Icon(
                     Icons.videocam_sharp,
                     size: 40,
-                    color: Constant.secondaryColor,
+                    color: Colors.purple[900],
                   ),
                 ),
                 Text(
@@ -78,7 +86,7 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
                   child: Icon(
                     Icons.book_online,
                     size: 40,
-                    color: Constant.secondaryColor,
+                    color: Colors.purple[900],
                   ),
                 ),
                 Text(
@@ -98,7 +106,7 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
                   child: Icon(
                     Icons.perm_contact_cal_outlined,
                     size: 40,
-                    color: Constant.secondaryColor,
+                    color: Colors.purple[900],
                   ),
                 ),
                 Text(

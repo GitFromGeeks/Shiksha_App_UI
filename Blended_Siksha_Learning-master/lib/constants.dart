@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Constant {
   static final Color primaryColor = Colors.orangeAccent[700];
-  static final Color secondaryColor = Colors.grey;
+  static final Color secondaryColor = Colors.purple[900];
 }
 
 class Images {
