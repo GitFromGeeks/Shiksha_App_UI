@@ -51,6 +51,7 @@ flutter:
   assets:
     - assets/image/app_logo.jpg
     - assets/image/app_logo.png
+    - assets/image/online_class.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

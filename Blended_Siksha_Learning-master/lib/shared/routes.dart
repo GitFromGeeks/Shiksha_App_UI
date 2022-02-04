@@ -18,6 +18,8 @@ import 'package:Blended_Siksha_learning/login/student_registration.dart';
 import 'package:Blended_Siksha_learning/login/teacher_registration.dart';
 import 'package:Blended_Siksha_learning/courses/video/live_class.dart';
 import 'package:Blended_Siksha_learning/courses/online_courses/widget/question_banks.dart';
+import 'package:Blended_Siksha_learning/courses/video/upcomming_live_classes.dart';
+import 'package:Blended_Siksha_learning/courses/video/ongoing_live_classes.dart';
 
 class Routes {
   static const String FRONT_PAGE = '/frontpage';
@@ -40,6 +42,8 @@ class Routes {
   static const String TEACHER_REG = '/teacherReg';
   static const String LIVE_CLASS = '/liveClass';
   static const String QUES_BANKS = '/questionBanks';
+  static const String UPCOMMING_LIVE_CLASSES = '/upcomming_videos';
+  static const String ONGOING_LIVE_CLASSES = '/ongoing_videos';
 }
 
 final routes = {
@@ -62,5 +66,7 @@ final routes = {
   Routes.STUDENT_REG: (context) => student_registration(),
   Routes.TEACHER_REG: (context) => teacher_registration(),
   Routes.LIVE_CLASS: (context) => live_class(),
-  Routes.QUES_BANKS: (context) => question_banks()
+  Routes.QUES_BANKS: (context) => question_banks(),
+  Routes.UPCOMMING_LIVE_CLASSES: (context) => upcomming_live_classes(),
+  Routes.ONGOING_LIVE_CLASSES: (context) => ongoing_live_classes(),
 };

@@ -62,7 +62,8 @@ class _NeetOnlineTestState extends State<NeetOnlineTest> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Constant.primaryColor,
+        // backgroundColor: Constant.primaryColor,
+        flexibleSpace: Constant.grad,
         centerTitle: true,
         title: Text('ONLINE TEST'),
         leading: IconButton(

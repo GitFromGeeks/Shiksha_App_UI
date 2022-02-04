@@ -38,7 +38,8 @@ class _DashboardPageState extends State<DashboardPage> {
           builder: (context, child, model) {
         return Scaffold(
           appBar: AppBar(
-            backgroundColor: Constant.primaryColor,
+            // backgroundColor: Constant.primaryColor,
+            flexibleSpace: Constant.grad,
             centerTitle: true,
             title: Text('Educational App'),
             leading: Icon(Icons.format_align_left_outlined),

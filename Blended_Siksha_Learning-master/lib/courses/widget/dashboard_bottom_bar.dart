@@ -13,8 +13,12 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 80,
-        color: Constant.primaryColor,
+        height: 58,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [Constant.primaryColor, Colors.orange[300]])),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

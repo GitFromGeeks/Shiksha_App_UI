@@ -25,7 +25,11 @@ class _FrontPageState extends State<FrontPage> {
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
-        color: Constant.primaryColor,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [Constant.primaryColor, Colors.white])),
         child: Center(
           child: Column(
             children: [
@@ -39,8 +43,8 @@ class _FrontPageState extends State<FrontPage> {
                     height: 200,
                     width: 200,
                     decoration: BoxDecoration(
-                        image: DecorationImage(image: Images.app_logo,
-                            fit: BoxFit.fill),
+                        image: DecorationImage(
+                            image: Images.app_logo, fit: BoxFit.fill),
                         shape: BoxShape.circle),
                   ),
                 ],
@@ -76,9 +80,7 @@ class _FrontPageState extends State<FrontPage> {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    width: 4
-                  ),
+                  SizedBox(width: 4),
                   Column(
                     children: [
                       Text(
