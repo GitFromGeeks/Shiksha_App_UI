@@ -254,18 +254,24 @@ class _DashboardPageState extends State<DashboardPage> {
                             ],
                           ),
                         ),
-                        ListTile(
-                          leading: Icon(Icons.message),
-                          title: Text('Ask a doubt'),
-                          trailing: Container(
-                              width: 16,
-                              height: 16,
-                              color: Constant.primaryColor,
-                              child: Icon(
-                                Icons.arrow_forward_ios_outlined,
-                                size: 16,
-                                color: Colors.white,
-                              )),
+                        InkWell(
+                          onTap: () {
+                            //
+                            Navigator.pushNamed(context, Routes.CHAT_ROOM);
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.message),
+                            title: Text('Ask a doubt'),
+                            trailing: Container(
+                                width: 16,
+                                height: 16,
+                                color: Constant.primaryColor,
+                                child: Icon(
+                                  Icons.arrow_forward_ios_outlined,
+                                  size: 16,
+                                  color: Colors.white,
+                                )),
+                          ),
                         ),
                         ListTile(
                           leading: Icon(Icons.message),

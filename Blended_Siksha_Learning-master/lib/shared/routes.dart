@@ -22,6 +22,7 @@ import 'package:Blended_Siksha_learning/courses/video/upcomming_live_classes.dar
 import 'package:Blended_Siksha_learning/courses/video/ongoing_live_classes.dart';
 import 'package:Blended_Siksha_learning/login/student_login.dart';
 import 'package:Blended_Siksha_learning/login/teacher_login.dart';
+import 'package:Blended_Siksha_learning/courses/widget/chatroom.dart';
 
 class Routes {
   static const String FRONT_PAGE = '/frontpage';
@@ -48,6 +49,7 @@ class Routes {
   static const String ONGOING_LIVE_CLASSES = '/ongoing_videos';
   static const String STUDENT_LOGIN = '/student_login';
   static const String TEACHER_LOGIN = '/teacher_login';
+  static const String CHAT_ROOM = '/chatroom';
 }
 
 final routes = {
@@ -75,4 +77,5 @@ final routes = {
   Routes.ONGOING_LIVE_CLASSES: (context) => ongoing_live_classes(),
   Routes.TEACHER_LOGIN: (context) => teacher_login(),
   Routes.STUDENT_LOGIN: (context) => student_login(),
+  Routes.CHAT_ROOM: (context) => chatroom(),
 };
