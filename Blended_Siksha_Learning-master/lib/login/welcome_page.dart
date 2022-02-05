@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:Blended_Siksha_learning/constants.dart';
 import 'package:Blended_Siksha_learning/shared/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -41,96 +40,70 @@ class _WelcomePageState extends State<WelcomePage> {
                     )
                   ],
                 ),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+                Text(
+                  "LOGIN",
+                  style: TextStyle(color: Constant.primaryColor, fontSize: 20),
+                ),
                 SizedBox(
-                  height: 8,
+                  height: MediaQuery.of(context).size.height * 0.1,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "Welcome!",
-                      style: TextStyle(
-                        fontSize: 24,
-                        color: Constant.primaryColor,
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(
-                  height: 40,
-                ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 1.23,
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width / 6.5,
-                        child: Material(
-                          elevation: 5,
-                          child: Container(
-                              height: 48,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(5),
-                                  shape: BoxShape.rectangle,
-                                  border: Border.all(
-                                    color: Constant.primaryColor,
-                                    width: 1.5,
-                                  )),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  DropdownMenuItem(
-                                    child: Text(' +91'),
-                                  ),
-                                  Icon(Icons.keyboard_arrow_down_rounded),
-                                ],
+                    Column(
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.3,
+                          height: MediaQuery.of(context).size.height * 0.15,
+                          child: ElevatedButton(
+                              style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      Constant.primaryColor),
+                                  shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(50.0)))),
+                              onPressed: () {
+                                Navigator.pushNamed(
+                                    context, Routes.STUDENT_LOGIN);
+                              },
+                              child: Icon(
+                                Icons.person_outlined,
+                                size: MediaQuery.of(context).size.width * 0.25,
                               )),
                         ),
-                      ),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width / 1.52,
-                        child: Material(
-                          elevation: 5,
-                          child: Container(
-                              height: 48,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(5),
-                                  shape: BoxShape.rectangle,
-                                  border: Border.all(
-                                    color: Constant.primaryColor,
-                                    width: 1.5,
-                                  )),
-                              child: TextFormField(
-                                controller: mobileController,
-                                keyboardType: TextInputType.number,
-                                decoration: InputDecoration(
-                                    contentPadding:
-                                        EdgeInsets.only(left: 16, bottom: 4),
-                                    border: InputBorder.none,
-                                    hintText: ' Enter your phone number'),
-                              )),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 8,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                        Text("student")
+                      ],
+                    ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 1.2,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.pushNamed(context, Routes.NEETUG_PAGE);
-                          },
-                          child: Text(
-                            'Sign in',
-                            style: TextStyle(fontSize: 16, color: Colors.white),
-                          )),
-                    )
+                      width: MediaQuery.of(context).size.width * 0.15,
+                    ),
+                    Column(
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.3,
+                          height: MediaQuery.of(context).size.height * 0.15,
+                          child: ElevatedButton(
+                              style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      Constant.primaryColor),
+                                  shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(100.0)))),
+                              onPressed: () {
+                                Navigator.pushNamed(
+                                    context, Routes.TEACHER_LOGIN);
+                              },
+                              child: Icon(
+                                Icons.cast_for_education,
+                                size: MediaQuery.of(context).size.width * 0.2,
+                              )),
+                        ),
+                        Text("Teacher")
+                      ],
+                    ),
                   ],
                 ),
                 Expanded(
