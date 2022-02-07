@@ -27,16 +27,16 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, Routes.NEETUG_PAGE);
+                    Navigator.pushNamed(context, Routes.UPLOADED_COURSES);
                   },
                   child: Icon(
-                    Icons.home,
+                    Icons.video_collection_rounded,
                     size: 40,
                     color: Colors.purple[900],
                   ),
                 ),
                 Text(
-                  'Home',
+                  'Online Class',
                   style: TextStyle(fontSize: 12, color: Colors.black),
                 )
               ],
@@ -50,7 +50,7 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
                     Navigator.pushNamed(context, Routes.LIVE_CLASS);
                   },
                   child: Icon(
-                    Icons.video_call_sharp,
+                    Icons.wifi,
                     size: 40,
                     color: Colors.purple[900],
                   ),
@@ -66,16 +66,16 @@ class _DashboardBottomBarState extends State<DashboardBottomBar> {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, Routes.UPLOADED_COURSES);
+                    Navigator.pushNamed(context, Routes.NEETUG_PAGE);
                   },
                   child: Icon(
-                    Icons.videocam_sharp,
+                    Icons.home,
                     size: 40,
                     color: Colors.purple[900],
                   ),
                 ),
                 Text(
-                  'Online Class',
+                  'Home',
                   style: TextStyle(fontSize: 12, color: Colors.black),
                 )
               ],

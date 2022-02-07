@@ -23,94 +23,148 @@ class live_class extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.15,
-              ),
-              SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(
-                          context, Routes.UPCOMMING_LIVE_CLASSES);
-                    },
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Upcomming Live Class",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
-              ),
-              SizedBox(
                 height: MediaQuery.of(context).size.height * 0.02,
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, Routes.ONGOING_LIVE_CLASSES);
-                    },
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Ongoing Live Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+                height: MediaQuery.of(context).size.height * 0.3,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, Routes.UPCOMMING_LIVE_CLASSES);
+                  },
+                  child: Image(
+                    image: AssetImage("assets/image/im1.png"),
+                  ),
+                ),
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.02,
               ),
-              SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Completed Live Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      SizedBox(
+                        // width: MediaQuery.of(context).size.width / 0.01,
+                        height: MediaQuery.of(context).size.height * 0.1,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              Navigator.pushNamed(
+                                  context, Routes.ONGOING_LIVE_CLASSES);
+                            },
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Constant.primaryColor)),
+                            child: Image(
+                              image: AssetImage("assets/image/im2.png"),
+                            )),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Ongoing Live Classes"),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    children: [
+                      SizedBox(
+                        // width: MediaQuery.of(context).size.width / 0.01,
+                        height: MediaQuery.of(context).size.height * 0.1,
+                        child: ElevatedButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Constant.primaryColor)),
+                            child: Image(
+                              image: AssetImage("assets/image/im3.png"),
+                            )),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Upcomming Live Classes"),
+                      )
+                    ],
+                  ),
+                ],
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.02,
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      SizedBox(
+                        // width: MediaQuery.of(context).size.width / 0.01,
+                        height: MediaQuery.of(context).size.height * 0.1,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              Navigator.pushNamed(
+                                  context, Routes.ONGOING_LIVE_CLASSES);
+                            },
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Constant.primaryColor)),
+                            child: Image(
+                              image: AssetImage("assets/image/im4.png"),
+                            )),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Completed Classes"),
+                      )
+                    ],
+                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.1),
+                  Column(
+                    children: [
+                      SizedBox(
+                        // width: MediaQuery.of(context).size.width / 0.01,
+                        height: MediaQuery.of(context).size.height * 0.1,
+                        child: ElevatedButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Constant.primaryColor)),
+                            child: Image(
+                              image: AssetImage("assets/image/im5.png"),
+                            )),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Free Class Videos"),
+                      )
+                    ],
+                  ),
+                ],
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Free Video Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+                height: 10,
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.02,
-              ),
-              SizedBox(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: MediaQuery.of(context).size.height * 0.07,
-                child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Constant.primaryColor)),
-                    child: Text(
-                      "Subscibtion Classes",
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.width / 22),
-                    )),
+              Column(
+                children: [
+                  SizedBox(
+                    // width: MediaQuery.of(context).size.width / 0.01,
+                    height: MediaQuery.of(context).size.height * 0.1,
+                    child: ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all(
+                                Constant.primaryColor)),
+                        child: Image(
+                          image: AssetImage("assets/image/im6.png"),
+                        )),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Subscribtion Live Classes"),
+                  )
+                ],
               ),
             ],
           ),

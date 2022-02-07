@@ -51,6 +51,12 @@ flutter:
   assets:
     - assets/image/app_logo.jpg
     - assets/image/app_logo.png
+    - assets/image/im1.png
+    - assets/image/im2.png
+    - assets/image/im3.png
+    - assets/image/im4.png
+    - assets/image/im5.png
+    - assets/image/im6.png
     - assets/image/online_class.jpg
   #   - images/a_dot_ham.jpeg
 

@@ -23,6 +23,9 @@ import 'package:Blended_Siksha_learning/courses/video/ongoing_live_classes.dart'
 import 'package:Blended_Siksha_learning/login/student_login.dart';
 import 'package:Blended_Siksha_learning/login/teacher_login.dart';
 import 'package:Blended_Siksha_learning/courses/widget/chatroom.dart';
+import 'package:Blended_Siksha_learning/courses/online_courses/widget/mock_test.dart';
+import 'package:Blended_Siksha_learning/courses/online_courses/widget/quiz.dart';
+import 'package:Blended_Siksha_learning/courses/online_courses/widget/subscribe.dart';
 
 class Routes {
   static const String FRONT_PAGE = '/frontpage';
@@ -50,6 +53,9 @@ class Routes {
   static const String STUDENT_LOGIN = '/student_login';
   static const String TEACHER_LOGIN = '/teacher_login';
   static const String CHAT_ROOM = '/chatroom';
+  static const String MOCK_TEST = '/mock_test';
+  static const String QUIZ = '/quiz';
+  static const String SUBSCRIBE = '/subscribe';
 }
 
 final routes = {
@@ -78,4 +84,7 @@ final routes = {
   Routes.TEACHER_LOGIN: (context) => teacher_login(),
   Routes.STUDENT_LOGIN: (context) => student_login(),
   Routes.CHAT_ROOM: (context) => chatroom(),
+  Routes.MOCK_TEST: (context) => mock_test(),
+  Routes.QUIZ: (context) => quiz(),
+  Routes.SUBSCRIBE: (context) => subscribe(),
 };
