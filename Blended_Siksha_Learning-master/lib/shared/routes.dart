@@ -26,6 +26,7 @@ import 'package:Blended_Siksha_learning/courses/widget/chatroom.dart';
 import 'package:Blended_Siksha_learning/courses/online_courses/widget/mock_test.dart';
 import 'package:Blended_Siksha_learning/courses/online_courses/widget/quiz.dart';
 import 'package:Blended_Siksha_learning/courses/online_courses/widget/subscribe.dart';
+import 'package:Blended_Siksha_learning/courses/widget/make_payment.dart';
 
 class Routes {
   static const String FRONT_PAGE = '/frontpage';
@@ -56,6 +57,7 @@ class Routes {
   static const String MOCK_TEST = '/mock_test';
   static const String QUIZ = '/quiz';
   static const String SUBSCRIBE = '/subscribe';
+  static const String MAKE_PAYMENT = '/make_payment';
 }
 
 final routes = {
@@ -87,4 +89,5 @@ final routes = {
   Routes.MOCK_TEST: (context) => mock_test(),
   Routes.QUIZ: (context) => quiz(),
   Routes.SUBSCRIBE: (context) => subscribe(),
+  Routes.MAKE_PAYMENT: (context) => make_payment(),
 };

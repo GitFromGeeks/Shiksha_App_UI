@@ -33,8 +33,8 @@ class profile_page extends StatelessWidget {
                     Navigator.pushNamed(context, Routes.SUBSCRIBE);
                   },
                   child: Text(
-                    "Prime",
-                    style: TextStyle(fontSize: 25),
+                    "Subscribe",
+                    style: TextStyle(fontSize: 20),
                   ),
                   style: ButtonStyle(
                       backgroundColor:
