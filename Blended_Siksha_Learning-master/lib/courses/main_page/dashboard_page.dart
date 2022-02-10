@@ -7,9 +7,11 @@ import 'package:Blended_Siksha_learning/courses/widget/neet_ug_completed_widget.
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_first_widget.dart';
 import 'package:Blended_Siksha_learning/courses/widget/neet_ug_question_bank_widget.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:Blended_Siksha_learning/shared/routes.dart';
+import 'package:double_back_to_close_app/double_back_to_close_app.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({Key key}) : super(key: key);
@@ -30,23 +32,49 @@ class _DashboardPageState extends State<DashboardPage> {
     super.initState();
   }
 
+  // Future<bool> _onBackPressed() {
+  //   return showDialog(
+  //           context: context,
+  //           builder: (context) {
+  //             return AlertDialog(
+  //               title: Text("Are you sure ?"),
+  //               content: Text("Do you want to exit App"),
+  //               actions: [
+  //                 TextButton(
+  //                     onPressed: () {
+  //                       Navigator.of(context).pop(false);
+  //                     },
+  //                     child: Text("No")),
+  //                 TextButton(
+  //                     onPressed: () {
+  //                       Navigator.of(context).pop(true);
+  //                     },
+  //                     child: Text("Yes"))
+  //               ],
+  //             );
+  //           }) ??
+  //       false;
+  // }
+
   @override
   Widget build(BuildContext context) {
     return ScopedModel<DashboardViewModel>(
       model: viewModel,
       child: ScopedModelDescendant<DashboardViewModel>(
           builder: (context, child, model) {
-        return WillPopScope(
-          onWillPop: () async => false,
-          child: Scaffold(
-            appBar: AppBar(
-              // backgroundColor: Constant.primaryColor,
-              flexibleSpace: Constant.grad,
-              centerTitle: true,
-              title: Text('Educational App'),
-              leading: Icon(Icons.format_align_left_outlined),
+        return Scaffold(
+          appBar: AppBar(
+            // backgroundColor: Constant.primaryColor,
+            flexibleSpace: Constant.grad,
+            centerTitle: true,
+            title: Text('Educational App'),
+            leading: Icon(Icons.format_align_left_outlined),
+          ),
+          body: DoubleBackToCloseApp(
+            snackBar: SnackBar(
+              content: Text("Tap again to close the app"),
             ),
-            body: SingleChildScrollView(
+            child: SingleChildScrollView(
               child: Column(
                 children: [
                   Container(
@@ -670,8 +698,8 @@ class _DashboardPageState extends State<DashboardPage> {
                 ],
               ),
             ),
-            bottomNavigationBar: DashboardBottomBar(),
           ),
+          bottomNavigationBar: DashboardBottomBar(),
         );
       }),
     );
