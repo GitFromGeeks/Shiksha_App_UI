@@ -42,7 +42,28 @@ class profile_page extends StatelessWidget {
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50.0)))),
                 ),
-              )
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.1,
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.04,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, Routes.WELCOME_PAGE);
+                  },
+                  child: Text(
+                    "LOGOUT",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all(Constant.primaryColor),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50.0)))),
+                ),
+              ),
             ],
           ),
         ),

@@ -14,7 +14,7 @@ import 'package:Blended_Siksha_learning/login/welcome_page.dart';
 import 'package:Blended_Siksha_learning/shared/popular_courses.dart';
 import 'package:Blended_Siksha_learning/login/profile_page.dart';
 import 'package:Blended_Siksha_learning/login/signup.dart';
-import 'package:Blended_Siksha_learning/login/student_registration.dart';
+import 'package:Blended_Siksha_learning/login/registration.dart';
 import 'package:Blended_Siksha_learning/login/teacher_registration.dart';
 import 'package:Blended_Siksha_learning/courses/video/live_class.dart';
 import 'package:Blended_Siksha_learning/courses/online_courses/widget/question_banks.dart';
@@ -77,7 +77,7 @@ final routes = {
   Routes.NEET_ONLINE_TEST: (context) => NeetOnlineTest(),
   Routes.PROFILE_PAGE: (context) => profile_page(),
   Routes.SIGNUP: (context) => signup(),
-  Routes.STUDENT_REG: (context) => student_registration(),
+  Routes.STUDENT_REG: (context) => registration(),
   Routes.TEACHER_REG: (context) => teacher_registration(),
   Routes.LIVE_CLASS: (context) => live_class(),
   Routes.QUES_BANKS: (context) => question_banks(),

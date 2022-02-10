@@ -3,7 +3,7 @@ import 'package:Blended_Siksha_learning/constants.dart';
 import 'package:Blended_Siksha_learning/shared/routes.dart';
 
 // ignore: camel_case_types
-class student_registration extends StatelessWidget {
+class registration extends StatelessWidget {
   TextEditingController nameController = TextEditingController();
   TextEditingController fathernameController = TextEditingController();
   TextEditingController mothernameController = TextEditingController();
@@ -44,7 +44,7 @@ class student_registration extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Students Registration Form",
+                      "Registration Form",
                       style: TextStyle(
                         fontSize: 24,
                         color: Constant.primaryColor,

@@ -11,7 +11,9 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  TextEditingController mobileController = TextEditingController();
+  TextEditingController usernameController = TextEditingController();
+
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -48,63 +50,74 @@ class _WelcomePageState extends State<WelcomePage> {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.1,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Column(
-                      children: [
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.3,
-                          height: MediaQuery.of(context).size.height * 0.15,
-                          child: ElevatedButton(
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(
-                                      Constant.primaryColor),
-                                  shape: MaterialStateProperty.all(
-                                      RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50.0)))),
-                              onPressed: () {
-                                Navigator.pushNamed(
-                                    context, Routes.STUDENT_LOGIN);
-                              },
-                              child: Icon(
-                                Icons.person_outlined,
-                                size: MediaQuery.of(context).size.width * 0.25,
-                              )),
-                        ),
-                        Text("student")
-                      ],
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.15,
-                    ),
-                    Column(
-                      children: [
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.3,
-                          height: MediaQuery.of(context).size.height * 0.15,
-                          child: ElevatedButton(
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(
-                                      Constant.primaryColor),
-                                  shape: MaterialStateProperty.all(
-                                      RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(100.0)))),
-                              onPressed: () {
-                                Navigator.pushNamed(
-                                    context, Routes.TEACHER_LOGIN);
-                              },
-                              child: Icon(
-                                Icons.cast_for_education,
-                                size: MediaQuery.of(context).size.width * 0.2,
-                              )),
-                        ),
-                        Text("Teacher")
-                      ],
-                    ),
-                  ],
+                SizedBox(
+                  width: MediaQuery.of(context).size.width / 1.3,
+                  child: Material(
+                    elevation: 5,
+                    child: Container(
+                        height: 48,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            shape: BoxShape.rectangle,
+                            border: Border.all(
+                              color: Constant.primaryColor,
+                              width: 1.5,
+                            )),
+                        child: TextFormField(
+                          keyboardType: TextInputType.emailAddress,
+                          controller: usernameController,
+                          decoration: InputDecoration(
+                              contentPadding:
+                                  EdgeInsets.only(left: 16, bottom: 4),
+                              border: InputBorder.none,
+                              hintText: ' User Name'),
+                        )),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width / 1.3,
+                  child: Material(
+                    elevation: 5,
+                    child: Container(
+                        height: 48,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            shape: BoxShape.rectangle,
+                            border: Border.all(
+                              color: Constant.primaryColor,
+                              width: 1.5,
+                            )),
+                        child: TextFormField(
+                          keyboardType: TextInputType.visiblePassword,
+                          controller: passwordController,
+                          decoration: InputDecoration(
+                              contentPadding:
+                                  EdgeInsets.only(left: 16, bottom: 4),
+                              border: InputBorder.none,
+                              hintText: ' Password'),
+                        )),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.1,
+                ),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  height: MediaQuery.of(context).size.height * 0.05,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.NEETUG_PAGE);
+                    },
+                    child: Text("LOGIN"),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Constant.primaryColor),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50.0)))),
+                  ),
                 ),
                 Expanded(
                   child: Container(),
@@ -128,7 +141,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       children: [
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, Routes.SIGNUP);
+                            Navigator.pushNamed(context, Routes.STUDENT_REG);
                           },
                           child: Text(
                             'Sign up',
