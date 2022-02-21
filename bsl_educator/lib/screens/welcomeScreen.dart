@@ -1,20 +1,22 @@
 import 'dart:async';
+import 'package:bsl_educator/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:Blended_Siksha_learning/constants.dart';
-import 'package:Blended_Siksha_learning/shared/routes.dart';
+import 'package:bsl_educator/shared/constants.dart';
+import 'package:get/get.dart';
 
-class FrontPage extends StatefulWidget {
-  const FrontPage({Key key}) : super(key: key);
+class WelcomeScreen extends StatefulWidget {
+  const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
-  _FrontPageState createState() => _FrontPageState();
+  State<WelcomeScreen> createState() => _WelcomeScreenState();
 }
 
-class _FrontPageState extends State<FrontPage> {
+class _WelcomeScreenState extends State<WelcomeScreen> {
+  @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
-      Navigator.pushNamed(context, Routes.WELCOME_PAGE);
+    Timer(const Duration(seconds: 2), () {
+      Get.to(const HomeScreen());
     });
   }
 
@@ -27,7 +29,7 @@ class _FrontPageState extends State<FrontPage> {
             gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [Constant.primaryColor, Colors.white])),
+                colors: [Constant.primaryColor!, Colors.white])),
         child: Center(
           child: Column(
             children: [
@@ -47,12 +49,12 @@ class _FrontPageState extends State<FrontPage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text(
                     'EDUCATION APP',
                     style: TextStyle(
@@ -78,9 +80,9 @@ class _FrontPageState extends State<FrontPage> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 4),
+                  const SizedBox(width: 4),
                   Column(
-                    children: [
+                    children: const [
                       Text(
                         'Aika Host',
                         style: TextStyle(
@@ -92,7 +94,7 @@ class _FrontPageState extends State<FrontPage> {
                   )
                 ],
               ),
-              SizedBox(height: 4),
+              const SizedBox(height: 4),
             ],
           ),
         ),
