@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Constant {
@@ -12,5 +14,6 @@ class Constant {
 }
 
 class Images {
-  static final AssetImage app_logo = AssetImage('assets/image/app_logo.png');
+  static final AssetImage applogo = AssetImage('assets/images/app_logo.png');
+  static final AssetImage applogoJPG = AssetImage('assets/images/app_logo.jpg');
 }
